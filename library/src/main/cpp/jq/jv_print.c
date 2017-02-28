@@ -200,7 +200,16 @@ static void jv_dump_term(struct dtoa_context *C, jv x, int flags, int indent,
                     // Normalise infinities to something we can print in valid JSON
                     if (d > DBL_MAX) d = DBL_MAX;
                     if (d < -DBL_MAX) d = -DBL_MAX;
-                    put_str(jvp_dtoa_fmt(C, buf, d), F, S, flags & JV_PRINT_ISATTY);
+
+                    // This is the original implementation, but for some reason
+                    // it doesn't work properly on Android as the output gets
+                    // corrupted, ultimately crashing with a SIGSEGV.
+                    //put_str(jvp_dtoa_fmt(C, buf, d), F, S, flags & JV_PRINT_ISATTY);
+
+                    // Instead we're doing an alternative simplification of the
+                    // problem. This is dangerous, though, as numbers larger
+                    // than 32 digits will get corrupted (again). This is,
+                    // however, maybe a theoretical issue only.
                 }
                 break;
             }

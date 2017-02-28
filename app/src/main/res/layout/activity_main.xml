@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <!-- Input -->
+            <com.echsylon.optimus.app.InfoView_
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                app:icon="@drawable/ic_open"
+                app:label="@string/input"
+                app:textType="multiline"/>
+
+            <!-- Filter -->
+            <com.echsylon.optimus.app.InfoView_
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                app:icon="@drawable/ic_open"
+                app:label="@string/filter"
+                app:textType="multiline"/>
+
+            <!-- Output -->
+            <com.echsylon.optimus.app.InfoView_
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                app:icon="@drawable/ic_cross"
+                app:label="@string/output"
+                app:textType="multiline"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/transform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:tint="@color/icons"
+        app:elevation="4dp"
+        app:layout_anchor="@id/page"
+        app:layout_anchorGravity="bottom|right|end"
+        app:srcCompat="@drawable/ic_transform"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textType" format="enum">
+        <enum name="singleline" value="1"/>
+        <enum name="multiline" value="2"/>
+    </attr>
+
+    <declare-styleable name="InfoView">
+        <attr name="icon" format="reference"/>
+        <attr name="label" format="string|reference"/>
+        <attr name="text" format="string|reference"/>
+        <attr name="textType"/>
+    </declare-styleable>
+
+</resources>

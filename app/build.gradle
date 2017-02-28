@@ -1,0 +1,52 @@
+plugins {
+    id 'me.tatarka.retrolambda' version '3.4.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apt {
+    arguments {
+        resourcePackageName android.defaultConfig.applicationId
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+    }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        versionCode 1
+        versionName '1.0'
+        applicationId 'com.echsylon.optimus.app'
+        minSdkVersion 17
+        targetSdkVersion 25
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        noCompress 'jq', 'json'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    apt 'org.androidannotations:androidannotations:4.2.0'
+
+    compile 'com.android.support:support-annotations:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+
+    compile 'org.androidannotations:androidannotations-api:4.2.0'
+    compile 'com.parse.bolts:bolts-tasks:1.4.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.annimon:stream:1.1.5'
+
+    compile project(':library')
+}

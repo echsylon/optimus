@@ -1,0 +1,17 @@
+{
+  "text": "Some regular text",
+  "boolean": true,
+  "number_float": 1.234,
+  "number_int": 1234,
+  "null": null,
+  "object": {
+    "a": 1,
+    "b": "B",
+    "c": false
+  },
+  "array": [
+    1,
+    2,
+    3
+  ]
+}

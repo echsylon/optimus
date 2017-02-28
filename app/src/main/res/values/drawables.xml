@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_launcher" type="drawable">@drawable/ic_android_primary_24px</item>
+    <item name="ic_cross" type="drawable">@drawable/ic_close_white_24px</item>
+    <item name="ic_open" type="drawable">@drawable/ic_folder_open_white_24px</item>
+    <item name="ic_reset" type="drawable">@drawable/ic_settings_backup_restore_white_24px</item>
+    <item name="ic_statistics" type="drawable">@drawable/ic_lightbulb_outline_white_24px</item>
+    <item name="ic_transform" type="drawable">@drawable/ic_transform_white_24px</item>
+</resources>

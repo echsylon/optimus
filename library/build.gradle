@@ -1,0 +1,45 @@
+plugins {
+    id 'me.tatarka.retrolambda' version '3.4.0'
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        versionCode 1
+        versionName '1.0'
+        minSdkVersion 16
+        targetSdkVersion 25
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path 'CMakeLists.txt'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-annotations:25.2.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+    compile 'com.annimon:stream:1.1.5'
+
+}

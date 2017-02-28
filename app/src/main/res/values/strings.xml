@@ -1,0 +1,25 @@
+<resources>
+    <string name="attribute"><div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></div></string>
+    <string name="app_name">Optimus Demo</string>
+    <string name="char_count">Character count</string>
+    <string name="content_preview">Content preview</string>
+    <string name="duration">Transformation duration</string>
+    <string name="embarrassing_error">Well, this was embarrassing. Something seems to have gone wrong.</string>
+    <string name="file">File</string>
+    <string name="file_size">File size</string>
+    <string name="filter">Filter</string>
+    <string name="input">Input JSON</string>
+    <string name="open">Open</string>
+    <string name="nbr_characters">%d characters</string>
+    <string name="nbr_milliseconds">%d milliseconds</string>
+    <string name="output">Transformation output</string>
+    <string name="reading_file_content">Reading file content…</string>
+    <string name="reset">Reset</string>
+    <string name="retry">Retry</string>
+    <string name="statistics">Statistics</string>
+    <string name="transforming">Transforming…</string>
+    <string name="transformation_error">Couldn\'t transform the provided input. You could double check the JSON and JQ syntax.</string>
+    <string name="unavailable_output">No output exists</string>
+    <string name="unavailable_external_storage">SD-card is unavailable</string>
+    <string name="unknown">Unknown</string>
+</resources>

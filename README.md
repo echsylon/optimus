@@ -1,8 +1,9 @@
 # Optimus - A JQ subset wrapper for Android
 
 ## Rationale
-The main focus of this project is to prove that data structure transformation can be done in the earliest possible stage on the client side as well. Ideally this service should be provided by the server.
+The main focus of this project is to prove that data structure transformation can be done on the client side as well. Ideally this service should be provided by the server.
 
+# Example
 The typical issue solved is when the server returns JSON data, structured in an inconvenient way from a client model perspective. Rather than enforcing the server structure on the client model, one can now re-model the JSON response on the client before delivering it to the DTO parser.
 
 ## Choice of underlying technology

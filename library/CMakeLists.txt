@@ -21,8 +21,6 @@ add_library( # Sets the name of the library.
 
              # Optimus source code
              src/main/cpp/optimus.c
-             src/main/cpp/jv_source.c
-             src/main/cpp/jv_source.h
 
              # JQ source code
              src/main/cpp/jq/builtin.c

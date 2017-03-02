@@ -419,10 +419,6 @@ jv jq_util_input_get_current_line(jq_state *jq) {
 }
 
 
-int jq_util_input_test(jq_util_input_state *state) {
-    return state->buf_valid_len == 0;
-}
-
 // Blocks to read one more input from stdin and/or given files
 // When slurping, it returns just one value
 jv jq_util_input_next_input(jq_util_input_state *state) {

@@ -57,5 +57,4 @@ jv jq_util_input_get_position(jq_state*);
 jv jq_util_input_get_current_filename(jq_state*);
 jv jq_util_input_get_current_line(jq_state*);
 
-int jq_util_input_test(jq_util_input_state *);
 #endif /* !JQ_H */

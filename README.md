@@ -18,7 +18,7 @@ The inplementation is found in the `library` module (found in the folder with th
 The `app` module contains a basic example app where you can choose your input data files and have the `library` module process it for you.
 
 ## Android Native Development Kit
-Also, you'll need to have the NDK downloaded and properly set up in order to run the project "from code". The [official documentation explains how this is easily done](https://developer.android.com/studio/projects/add-native-code.html)
+Also, you'll need to have the NDK downloaded and properly set up in order to run the project "from code". The [official documentation explains how this is done](https://developer.android.com/studio/projects/add-native-code.html)
 
 ## Changes made to the JQ source code
 Good to know is that there is a ugly quick-fix to handle JSON Number parsing properly. The original implementation doesn't seem to work properly on Android (the fix is docummented and found in the `library/src/main/cpp/jq/jv_print.c` file).
